@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    font-family: 'Fjalla One', sans-serif;
+}
+h1{
+    margin: 5rem 0 4rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+div.albumContainer{
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    flex-wrap: wrap;
+    margin:0 auto;
+}
+div.albumContainer picture{
+    margin: 2.5rem 0;
+    cursor: pointer;
+}
+div.albumContainer picture img{
+    border-radius: 100%;
+    max-width: 220px;
+}
+div.albumContainer picture figcaption{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 25px;
+    
+}
+
+@keyframes moving {
+    from {top: 0px;}
+    to {top: -280px;}
+}
+
+figcaption.move {
+    animation: moving 2s;
+    animation-fill-mode: forwards;
+    position:relative;
+}
+
+@keyframes return {
+    from {top: -280px;}
+    to {top: 0px;}
+}
+
+figcaption.return{
+    animation: return 2s;
+    animation-fill-mode: forwards;
+    position:relative;
+}
