@@ -3,7 +3,7 @@ body{
     font-family: 'Fjalla One', sans-serif;
 }
 h1{
-    margin: 5rem 0 4rem 0;
+    margin: 5rem 0 2.6rem 0;
     text-align: center;
     font-size: 3rem;
 }
@@ -26,12 +26,14 @@ div.albumContainer picture figcaption{
     width: 100%;
     text-align: center;
     padding: 1rem 0;
-    font-size: 25px;    
+    font-size: 25px; 
+    height: 63px;
+    box-sizing: border-box;
 }
 
-@media (max-width:370px){
+@media (max-width:413px){
     h1{
-        margin: 3rem 0 2.5rem 0;
+        margin: 3rem 0 1.5rem 0;
         font-size: 2rem;
     }
     div.albumContainer picture img{
@@ -41,6 +43,7 @@ div.albumContainer picture figcaption{
         font-size: 20px;    
     }
     div.albumContainer picture{
-        margin: 1.8rem 0;
+        padding:0;
+        margin:0;
     }
 }
